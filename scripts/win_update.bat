@@ -14,4 +14,4 @@ echo Checking for Windows updates...
 PowerShell -Command "Start-Process PowerShell -ArgumentList '-NoProfile -Command & {Install-Module PSWindowsUpdate -Force -SkipPublisherCheck; Get-WindowsUpdate -AcceptAll -Install}' -Verb RunAs"
 
 :: Logging results
-echo Completed WSL update at %date% %time% >> "%LOGFILE%"
+echo Completed Windows update at %date% %time% >> "%LOGFILE%"

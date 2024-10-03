@@ -9,7 +9,9 @@ set "currentTime=%currentTime: =0%"
 :: Set the log file path (with valid date and time in the filename)
 set LOGFILE=%~dp0winget_update_log_%currentDate%_%currentTime%.txt
 
-:: Start logging
+:: Start updating
 echo Running winget upgrade at %date% %time% >> "%LOGFILE%"
 winget upgrade --all --include-unknown --force >> "%LOGFILE%" 2>&1
+
+:: Logging results
 echo Completed winget upgrade at %date% %time% >> "%LOGFILE%"
