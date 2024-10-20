@@ -1,0 +1,21 @@
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+
+# Ignore WSL and Windows update logs
+/Logs/
+
+# Ignore any compiled files
+*.exe
+*.dll
+
+# Ignore backup files
+*~
+
+# Ignore gitattributes
+*.gitattributes
+
+# Ignore git folder
+/.git/
